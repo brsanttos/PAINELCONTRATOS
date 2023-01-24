@@ -1,0 +1,87 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-image: linear-gradient(45deg, red, black);
+} 
+header {
+    background-color: rgb(0, 0, 0);
+    padding: 30px;
+    text-align: center;
+}
+
+.content {
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 0px;
+}
+
+#btnMenu {
+    cursor: pointer;
+    padding: 0px;
+    transition: all 0.5s;
+}
+
+#btnMenu:hover {
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: rgb(41, 57, 98);
+}
+
+#btnMenu:active {
+    background-color: rgb(3, 4, 7);
+}
+
+#btnClose {
+    padding: 8px;
+    background-color: rgb(78, 37, 37);
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#btnClose:active {
+    background-color: rgb(151, 73, 73);
+}
+
+.menu {
+    position:fixed;
+    top: 0;
+    width: var(--menu-size);
+    height: 100%;
+    background-color: rgb(40, 42, 54);
+    text-align: left;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu ul li {
+    display:block;
+}
+
+.menu ul li a {
+    transition: background 0.2s;
+    display: block;
+    color: #fff;
+    font-size: 14px;
+    margin: 0%;
+    text-align: left;
+    text-decoration: none;
+    text-transform:uppercase;
+    padding: 0px 10px;
+}
+
+.menu ul li a:hover {
+    background-color: rgb(49, 54, 85);
+}
+
+.effect {
+    transition: margin 0.4s;
+}
+
+@media (min-width: 768px) {
+    #btnClose {
+        display: none;
+    }
+}
