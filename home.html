@@ -6,33 +6,22 @@
         <meta name="viewport" content="width-device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="home.css" media="screen" />
             <title>Home</title>
-        <link rel="preload" href="assets/css/home.css" as="style">
-        <link rel="preload" href="assets/js/navigation.js" as="script">
     </head>
 
     <body>
-            <header>
-                <img src="assets/img/logoproposta.png" alt="Menu" id="bttMenu">
-            </header>
-
-            <div class="content">
-                <p>Seja bem vindo!!</p>
-            </div>
-
-            <div id="menu" class="menu effect">
-                <nav>
-                    <div style="text-align: right;">
-                        <button id="bttClose">X</button>
-                    </div>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Config. Propostas</a></li>
-                        <li><a href="#">Manut. Contratos</a></li>
-                    </ul>
-                </nav>
-            </div>
-            
-            <script src="assets/js/script.js"></script>
+        
+        <div class="dropdown">
+            <button class="mainmenubtn">Menu</button>
+                <div class="dropdown-child">
+                    <a href="#">Config. de Propostas</a>
+                    <a href="#">Propostas Abertas</a>
+                    <a href="#">Manut. de Contratos</a>
+                    <a href="#">Propostas Recusadas</a>
+                    <a href="#">Analise Desempenho</a>
+                    <a href="index.html">Sair</a>
+                </div>
+        
     </body>
+    
 
 </html>

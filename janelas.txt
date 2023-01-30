@@ -1,0 +1,9 @@
+{ATENDIMENTOS}
+
+*campos não alteraveis
+-cod
+-nome
+-flex
+-status
+
+*campos alteraveis

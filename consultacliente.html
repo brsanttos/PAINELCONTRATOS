@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="consultacliente.css">
+  <script src="consultacliente.js"></script>
+  <title>Consulta de Clientes</title>
+</head>
+<body>
+  <div class="form-group">
+    <label for="filtroCliente">Filtro de Clientes:</label>
+    <input type="text" id="filtroCliente" name="filtroCliente" onkeyup="filtrarClientes()">
+  </div>
+
+  <table class="tabelaClientes" id="cliente-table">
+    <tr>
+      <th>Nome</th>
+      <th>Cód. Apollo</th>
+      <th>CNPJ/CPF</th>
+      <th>Mod. Flex</th>
+      <th>UF</th>
+      <th>Cidade</th>
+      <th>Endereço</th>
+      <th>Telefone</th>
+    </tr>
+    <!-- Linhas de clientes serão adicionadas dinamicamente pelo JavaScript -->
+  </table>
+</body>
+</html>

@@ -1,0 +1,42 @@
+html {
+  height: 100%;
+}
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-image: linear-gradient(45deg, red, black);
+  color: white;
+}
+
+div {
+  font-size: 25px;
+  margin: 10px;
+  display: center;
+  align-items: left;
+}
+tr[style="display:none"] {
+    display: none;
+  }
+  
+.tabelaClientes {
+  width: 100%;
+  border-collapse: collapse;
+  color: black;
+  text-align: center;
+}
+
+.tabelaClientes th,
+.tabelaClientes td {
+  border: 1px solid black;
+  padding: 6px;
+}
+
+.tabelaClientes th {
+  background-color: #f2f2f2;
+}
+
+/* Formatação para linha selecionada */
+#client-table tbody tr.selected {
+  background-color: blue;
+  color: white;
+}

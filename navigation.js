@@ -1,25 +1,18 @@
-'use strict'
+// SCRIPT PARA TRANSFORMAR O CAMPO VALOR EM MOEDA
 
-const menuSize = '250px';
+function formatCurrency(input) {
+    var value = input.value;
+    value = value.replace(/\D/g, "");
+    value = new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(value/100);
+    input.value = value;
+  }
 
-let open = true;
+// FUNÇÃO PARA VALIDAR O CAMPO "COD APOLLO"
 
-document.querySelector('#btnMenu').addEventListener('click', e => {
-    open = !open;
-    toggleMenu();
-})
-
-document.querySelector('#btnClose').addEventListener('click', e => {
-    open = false;
-
-    toggleMenu();
-})
-
-function toggleMenu() {
-    if (open) {
-        document.querySelector('#menu').style.marginLeft = 0;
-        return;
+function validateForm() {
+    var x = document.getElementById("code").value;
+    if (x == "") {
+        alert("O campo 'Cod Apollo' é obrigatório");
+        return false;
     }
-
-    document.querySelector('#menu').style.marginLeft = `-${menuSize}`;
 }

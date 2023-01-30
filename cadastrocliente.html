@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cadastro de clientes</title>
+    <script src="navigation.js"></script>
+    <link rel="stylesheet" type="text/css" href="cadastrocliente.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Cadastro de clientes</h1>
+      <form>
+        <label for="name">Nome do Cliente:</label>
+            <input type="text" id="name" name="name"><br>
+        <label for="name">Cod Apollo*:</label>
+          <input type="text" id="code" name="code" onchange="checkCode()" required><br>
+        <label for="date">Data de Atendimento:</label>
+            <input type="date" id="date" name="date"><br>
+        <label for="model">Modelo Flex:</label><br>
+              <select type="text" id="model" name="model" class="custom-select">
+                  <option value="model1">Flex 1</option>
+                  <option value="model2">Flex 2</option>
+                  <option value="model3">Flex 3</option>
+                  <option value="model4">Flex 4</option>
+                  <option value="model6">Flex 6</option>  
+              </select><br><br>
+        <label for="name">Valor:</label>
+          <input type="text" id="value" name="value" onchange="formatCurrency(this)"><br>
+        <input type="submit" value="Enviar">
+      </form>
+    </div>
+        <script>
+            function checkCode() {
+            // Código para verificar se o código do cliente já existe na base de dados e preencher os campos automaticamente
+            // Exemplo:
+            var code = document.getElementById("code").value;
+            // Utilize uma chamada AJAX para verificar se o código já existe na base de dados
+            // Se sim, preencha os campos de nome, data de atendimento e valor automaticamente
+            // Exemplo:
+            if (code == "123") {
+                document.getElementById("name").value = "Bruno Silva";
+            }}
+        </script>
+  </body>
+</html>
