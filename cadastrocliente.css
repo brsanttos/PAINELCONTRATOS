@@ -7,13 +7,38 @@ html{
     color: white;
 } 
 
-.container {
-    display: center;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    margin: 8px 0;
-  }
+.dropdown {
+  position: relative;
+}
+
+.mainmenubtn {
+  background-color: #333;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-child {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px white;
+  z-index: 1;
+}
+
+.dropdown-child a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-click {
+  display: block;
+}
   
   input[type="text"],
   input[type="date"],

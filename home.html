@@ -4,22 +4,23 @@
         <meta charset="UTF -8">
         <meta http-equiv="X-UA-Compatible" content="IE-edge">
         <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <script src="navigation.js"></script>
         <link rel="stylesheet" type="text/css" href="home.css" media="screen" />
             <title>Home</title>
     </head>
 
     <body>
-        
-        <div class="dropdown">
-            <button class="mainmenubtn">Menu</button>
-                <div class="dropdown-child">
+            <div class="dropdown">
+                <button class="mainmenubtn" onclick="toggleMenu()">Menu</button>
+                  <div class="dropdown-child" id="dropdown-menu">
+                    <a href="cadastrocliente.html">Cadastro</a>
                     <a href="#">Config. de Propostas</a>
                     <a href="#">Propostas Abertas</a>
-                    <a href="#">Manut. de Contratos</a>
+                    <a href="manutencaocontratos.html">Manut. de Contratos</a>
                     <a href="#">Propostas Recusadas</a>
                     <a href="#">Analise Desempenho</a>
                     <a href="index.html">Sair</a>
-                </div>
+                  </div>
         
     </body>
     
