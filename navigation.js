@@ -7,7 +7,7 @@ function formatCurrency(input) {
     input.value = value;
   }
 
-// FUNÇÃO PARA VALIDAR O CAMPO "COD APOLLO"
+// FUNÇÃO PARA VALIDAR O CAMPO "COD APOLLO" NO FORMULARIO
 
 function validateForm() {
     var x = document.getElementById("code").value;
@@ -17,7 +17,7 @@ function validateForm() {
     }
 }
 
-// FUNÇÃO PARA ABRIR O MENU
+// FUNÇÃO PARA ABRIR/FECHAR O MENU
 
 function toggleMenu() {
     const dropdownMenu = document.getElementById("dropdown-menu");
